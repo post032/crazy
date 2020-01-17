@@ -1,0 +1,31 @@
+div.form
+  div.form__choice
+    input(type="radio" id="pickup" name="delivery" value="Самовывоз").form__radio
+    label(for="pickup")
+      p.form__name Самовывоз - 
+        span 0 р
+      span.form__description Москва, Алтуфьевское шоссе 80 ; ПН-ВС 10:00-20:00
+  div.form__choice
+    input(type="radio" id="delivery" name="delivery" value="доставка на дом").form__radio
+    label(for="delivery")
+      p.form__name Курьерская доставка по Москве и России - 
+        span ? ₽ 
+      span.form__description Для расчета стоимости доставки введите адрес
+  div.form__choice.form__choice--last
+    input(type="radio" id="pvz" name="delivery" value="Пункт выдачи" checked).form__radio
+    label(for="pvz")
+      p.form__name Доставка до ПВЗ по Москве и России - 
+        span 210 ₽ 
+      span.form__description Для расчета стоимости доставки введите адрес
+  div.form__input
+    input(id="name" type="text" name="name" placeholder="Имя и Фамилия").form__input-text
+    label(for="name").visually-hidden Введите Имя и Фамилию
+    input(id="tel" type="tel" name="name" placeholder="Номер телефона").form__input-text
+    label(for="tel").visually-hidden Введите номер телефона
+    input(id="mail" type="mail" name="name" placeholder="E-mail").form__input-text
+    label(for="mail").visually-hidden Введите E-mail
+    input(id="address" type="text" name="name" placeholder="Адрес в произвольной форме").form__input-text
+    label(for="address").visually-hidden Введите адрес в произвольной форме
+    a(href="#order").form__link Подробная информация о заказе
+    h2.form__details Детали
+    textarea(name="name" rows="8" placeholder="Примечание к вашему заказу, например, особые пожелания отделу доставки").form__textarea

@@ -1,0 +1,48 @@
+div.order__line
+    section(id="order").order
+      h2.order__title Ваш заказ
+      ul.order__lists
+        li.order__list
+          div.order__element
+            img(src="img/img1.png" alt="Шоколадная косметичка")
+            h3.order__name Шоколадная косметичка
+          div.order__element-price
+            span.order__price 850р
+            span.order__price-old 
+              del 970р
+        li.order__list
+          div.order__element
+            img(src="img/img2.png" alt="Пистолет и патроны")
+            h3.order__name Пистолет и патроны
+          div.order__element-price
+            span.order__price 1272р
+            span.order__price-old 
+              del 1590р
+        li.order__list
+          div.order__element
+            img(src="img/img3.png" alt="Шоколадные инструменты XL")
+            h3.order__name Шоколадные инструменты XL
+          div.order__element-price
+            span.order__price 1485р
+            span.order__price-old 
+              del 1790р
+      ul.order__full
+        li.order__item 
+          p.order__full-name Сумма заказа
+          span.order__sum 3607p
+        li.order__item 
+          p.order__full-name Доставка
+          span.order__sum 210p
+        li.order__item 
+          p.order__full-name  Итого
+          span.order__sum 3607p
+      ul.order__payment
+        li.order__pay
+          input(type="radio" id="pay1" name="pay" value="Оплата при доставке" checked).order__pay__input
+          label(for="pay1").order__pay__name Оплата при доставке
+        li.order__pay
+          input(type="radio" id="pay2" name="pay" value="Оплатить наличными при получении").order__pay__input
+          label(for="pay2").order__pay__name Оплатить наличными при получении
+      div.order__submit
+        button(type="submit").order__button Подтвердить заказ
+          
